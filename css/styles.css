@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(145, 55, 55);
   }
   
   li {
@@ -19,15 +19,91 @@ ul {
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: rgb(0, 255, 255);
   }
   h1{
-      color: blue;
+      color: #00ff73;
       text-align: center;
       font-size: 100px;
       text-emphasis:bold;
   }
   p{
       text-align: center;
-      color: brown;
+      color: #b80e0e;
   }
+.container{
+  /* background-color: rgb(132, 0, 255); */
+} 
+.containe{
+  background-color: rgb(212, 0, 255);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(101, 12, 184);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: hsl(14, 84%, 52%);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: hsl(286, 88%, 46%);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+ 
